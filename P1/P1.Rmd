@@ -7,3 +7,20 @@ output:
   pdf_document: default
   word_document: default
 ---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+## Library / Packages
+```{r}
+install.packages("forecast")
+install.packages("graphics")
+install.packages("TTR")
+install.packages("TSA")
+```
+```{r}
+library("forecast")
+library("graphics")
+library("TTR")
+library("TSA")
+```
+
