@@ -25,4 +25,4 @@ library("readxl")
 ```{r}
 data <- read_excel("C:/Users/Vita Rizkyana/OneDrive/Documents/Vita/Kuliah/Semester 5/MPDW/MPDW Pertemuan 1.xlsx", sheet = 1)
 str(data)
-dim(data)
+dim(data) 
