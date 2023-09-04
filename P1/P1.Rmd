@@ -1,12 +1,13 @@
 ---
-title: "Pertemuan 1 - Pemulusan"
+title: "MPDW Pertemuan 1 - Pemulusan"
 author:
--   Vita Rizkyana Anggraeni
+- Vita Rizkyana Anggraeni
 output:
   html_document: default
   pdf_document: default
   word_document: default
 ---
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
@@ -17,4 +18,11 @@ library("forecast")
 library("graphics")
 library("TTR")
 library("TSA")
+library("readxl")
 ```
+## Read Data
+
+```{r}
+data <- read_excel("C:/Users/Vita Rizkyana/OneDrive/Documents/Vita/Kuliah/Semester 5/MPDW/MPDW Pertemuan 1.xlsx", sheet = 1)
+str(data)
+dim(data)
