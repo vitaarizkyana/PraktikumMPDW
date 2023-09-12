@@ -1,6 +1,6 @@
 ---
 title: "Prak MPDW 2"
-author: "Mutiara Andhini"
+author: "Vita Rizkyana Anggraeni_G1401211065"
 date: "2023-09-05"
 output: html_document
 ---
