@@ -49,10 +49,8 @@ Akan dicoba membangkitkan proses MA(2) dengan $\theta_1 = 0.4$ dan $\theta_2 = 0
 
 ```{r}
 set.seed(1065)
-ma[1] <- wn[1]
-ma[1]
-ma[2] <- wn[2]
-ma[2]
+ma <- wn[1:2]
+ma
 ```
 
 Nilai-nilai selanjutnya dapat dicari melalui *loop*. Bentuk loop dapat dilihat dari rumus MA(2) yang hendak dibangkitkan:
