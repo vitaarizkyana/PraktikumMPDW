@@ -1,5 +1,6 @@
 ---
 title: "Data Tidak Stasioner"
+author : "Vita Rizkyana Anggraeni_G1401211065"
 output:
   html_document: default
   pdf_document: default
@@ -13,9 +14,7 @@ library(tseries)
 library(MASS)
 ```
 
-## Stasioner dalam Rataan dan Ragam
-
-Pada dasarnya, pembangkitan data ARIMA akan menghasilkan data yang stasioner dalam rataan dan ragam karena akan mengikuti fungsi *default*-nya yang mengikuti pembangkitan bilangan acak normal dengan `mean=0` dan `ragam=1` .
+## Tidak Stasioner dalam Rataan dan Ragam
 
 ```{r}
 library(rio)
