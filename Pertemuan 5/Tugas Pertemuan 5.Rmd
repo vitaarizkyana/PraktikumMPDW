@@ -17,7 +17,7 @@ library(MASS)
 
 ```{r}
 library(rio)
-stas <- import("https://raw.githubusercontent.com/vitaarizkyana/PraktikumMPDW/main/Data/MPDW%20Pertemuan%201.xlsx")
+stas <- import("https://raw.githubusercontent.com/vitaarizkyana/PraktikumMPDW/main/Pertemuan%205/MPDW%20Pertemuan%205.xlsx")
 stas <- ts(stas$stock)
 stas
 ```
@@ -50,7 +50,7 @@ $H_0$ : Data tidak stasioner dalam rataan
 
 $H_1$ : Data stasioner dalam rataan
 
-Berdasarkan uji ADF tersebut, didapat *p-value* sebesar 0.7199 yang lebih besar dari taraf nyata 5% sehingga tidak tolak $H_0$ dan menandakan bahwa data tidak stasioner dalam rataan. Hal ini sesuai dengan hasil eksplorasi menggunakan plot time series dan plot ACF yang terlihat mengalami penurunan secara perlahan (tails off slowly).
+Berdasarkan uji ADF tersebut, didapat *p-value* sebesar 0.7199 yang lebih besar dari taraf nyata 5% sehingga tidak tolak $H_0$ dan menandakan bahwa data tidak stasioner dalam rataan. Hal ini sesuai dengan hasil eksplorasi menggunakan plot time series dan plot ACF yang terlihat mengalami penurunan secara perlahan (*tails off slowly*).
 
 
 ### Plot Box-Cox
@@ -91,7 +91,7 @@ Plot deret waktu di atas menunjukkan bahwa data tidak stasioner dalam rataan, di
 acf(dt_stas1)
 ```
 
-Berdasarkan plot ACF, terlihat bahwa plot ACF pada data tersebut cenderung *slowly tails off*.
+Berdasarkan plot ACF, terlihat bahwa plot ACF pada data tersebut menurun secara perlahan (*tails off slowly*) yang menandakan data tidak stasioner dalam rataan.
 
 #### Uji ADF
 
@@ -117,7 +117,7 @@ lambda
 bc$x[bc$y > max(bc$y) - 1/2 * qchisq(.95,1)]
 ```
 
-Gambar di atas menunjukkan nilai *rounded value* ($\lambda$) optimum sebesar **-0,008** dan pada selang kepercayaan 95% nilai memiliki batas bawah **-0,210** dan batas atas **0,194**. Selang tersebut tidak memuat nilai satu sehingga dapat dikatakan bahwa data tidak `stasioner dalam ragam.
+Gambar di atas menunjukkan nilai *rounded value* ($\lambda$) optimum sebesar **-0,008** dan pada selang kepercayaan 95% nilai memiliki batas bawah **-0,210** dan batas atas **0,194**. Selang tersebut tidak memuat nilai satu sehingga dapat dikatakan bahwa data tidak stasioner dalam ragam.
 
 #### Bagian 2
 
@@ -141,7 +141,7 @@ Plot deret waktu di atas menunjukkan bahwa data tidak stasioner dalam rataan, di
 acf(dt_stas2)
 ```
 
-Berdasarkan plot ACF, terlihat bahwa plot ACF pada data tersebut cenderung *slowly tails off*.
+Berdasarkan plot ACF, terlihat bahwa plot ACF pada data tersebut menurun secara perlahan (*tails off slowly*) yang menandakan data tidak stasioner dalam rataan.
 
 #### Uji ADF
 
